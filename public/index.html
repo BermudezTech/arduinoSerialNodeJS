@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Control PI de motorreductor</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="transportador.css" />
+    </head>
+    <body>
+        <h1>Control PI de motor DC</h1>
+        <div class="control">
+            <div class="transportador">
+                <div class="range">
+                    <input
+                        type="range"
+                        name="points"
+                        min="0"
+                        max="360"
+                        value=""
+                        class="count"
+                    />
+                    <div class="slice left">
+                        <div class="blocker"></div>
+                    </div>
+                    <div class="slice right">
+                        <div class="blocker"></div>
+                    </div>
+                    <span class="info">
+                        <span class="count">0</span>
+                    </span>
+                    <div class="dial" tabindex="0"></div>
+                </div>
+            </div>
+            <div class="input">
+                <label for="posicion">Posición deseada (0° - 270°)</label>
+                <input type="number" id="posicion" disabled />
+            </div>
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="transportador.js"></script>
+    </body>
+</html>

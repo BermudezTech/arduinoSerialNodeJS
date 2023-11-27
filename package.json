@@ -1,0 +1,25 @@
+{
+    "name": "arduino-control",
+    "version": "1.0.0",
+    "description": "Arduino control through serial port",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "keywords": [
+        "arduino",
+        "control",
+        "serial"
+    ],
+    "author": "BermudezTech",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "serialport": "^12.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
