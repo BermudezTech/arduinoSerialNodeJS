@@ -17,7 +17,7 @@ $dial__size: 26px;
     height: $range__size;
     position: relative;
     width: $range__size;
-
+    transform: rotate(-90deg);
     input {
         opacity: 0;
         position: absolute;
@@ -33,6 +33,7 @@ $dial__size: 26px;
         position: absolute;
         top: -$dial__size/2;
         transform: translateX(#{$range__size/2}) translateY(#{$range__width/2});
+        // transform: translateX(#{$range__width/2}) translateY(#{$range__size/2});
         width: $dial__size;
         z-index: 40;
         &:focus {
